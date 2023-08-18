@@ -1,0 +1,18 @@
+clc
+clear all
+rng default
+
+x=square(t)
+
+%x=triang(20);
+%y=[zeros(3,1);x]+0.3*rand(length(x)+3,1);
+
+subplot(2,1,1)
+stem(x,'filled')
+axis([0 22 -1 2])
+title('ip')
+
+subplot(2,1,2)
+stem(x,'filled')
+axis([0 22 -1 2])
+title('op')
